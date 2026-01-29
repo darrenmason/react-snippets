@@ -1,19 +1,23 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
 import Header from './components/Header'
 import ToDo from './components/ToDo'
 import Form from './components/Form'
+import Snippets from './components/Snippets'
 
 function App() {
 
   return (
-    <>
+    <div className="app">
       <Header />
-      <Form />
-      <ToDo />
-    </>
+      <section className="snippet">
+        <h2>Basics</h2>
+        <div className="stack">
+          <Form />
+          <ToDo />
+        </div>
+      </section>
+      <Snippets />
+    </div>
   )
 }
 

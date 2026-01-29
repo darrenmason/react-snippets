@@ -5,9 +5,9 @@ import './index.css'
 import {Store, initialState} from './context/Store.js'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-  <Store.Provider value={initialState}>
-    <React.StrictMode>
+  <React.StrictMode>
+    <Store.Provider value={initialState}>
       <App />
-    </React.StrictMode>,
-  </Store.Provider>
+    </Store.Provider>
+  </React.StrictMode>
 )
